@@ -14,8 +14,8 @@ class Connection:
         self.password = password
 
         print('Create session...')
-        self.session = vk.AuthSession(app_id=VKData.APP_ID, \
-            user_login=VKData.LOGIN, user_password=VKData.PASSWORD)
+        self.session = vk.AuthSession(app_id=app_id, \
+            user_login=login, user_password=password)
         print('Completed!')
         print('----------')
 
